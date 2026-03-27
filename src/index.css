@@ -24,7 +24,8 @@
   --color-danger: #ef4444;
   --color-online: #22c55e;
 
-  --glass-blur: blur(24px) saturate(150%);
+  --glass-blur: blur(24px);
+  --glass-saturate: saturate(150%);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -87,8 +88,7 @@ video {
   top: 0;
   z-index: 100;
   background: rgba(14, 14, 22, 0.7);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur) var(--glass-saturate);
   border-bottom: 1px solid var(--color-glass-border);
 }
 
@@ -220,8 +220,7 @@ video {
 /* ---------- Glass Card ---------- */
 .glass-card {
   background: var(--color-glass);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur) var(--glass-saturate);
   border: 1px solid var(--color-glass-border);
   border-radius: var(--radius-lg);
   padding: 28px;
@@ -466,7 +465,6 @@ video {
   justify-content: center;
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   padding: 24px;
   cursor: zoom-out;
   animation: lightbox-fade-in 0.2s ease;
@@ -513,8 +511,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur) var(--glass-saturate);
 }
 
 .media__placeholder-inner {
@@ -680,8 +677,7 @@ video {
     right: 0;
     flex-direction: column;
     background: rgba(14, 14, 22, 0.95);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
     border-bottom: 1px solid var(--color-glass-border);
     padding: 24px;
     gap: 20px;
