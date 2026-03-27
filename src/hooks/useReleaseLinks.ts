@@ -46,6 +46,7 @@ export function detectPlatform(): PlatformKey | null {
 const PLATFORM_LABELS: Record<PlatformKey, string> = {
   windows: "Windows",
   linux: "Linux",
+  linuxDeb: "Linux",
   android: "Android",
 };
 

@@ -31,8 +31,10 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Copy CNAME
-        run: cp CNAME dist/CNAME
+      - name: Copy CNAME & disable Jekyll
+        run: |
+          cp CNAME dist/CNAME
+          touch dist/.nojekyll
 
       - uses: actions/configure-pages@v5
 
