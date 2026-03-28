@@ -28,14 +28,14 @@ export function Hero() {
           </div>
 
           <h1 className="hero__title">
-            The modern Mumble VoIP client.{" "}
-            <span className="hero__title--accent">Voice chat that respects your privacy.</span>
+            Voice chat,{" "}
+            <span className="hero__title--accent">without the catch.</span>
           </h1>
 
           <p className="hero__subtitle">
-            Fancy Mumble is an open-source Mumble client with crystal-clear
-            VoIP, a sleek UI, rich chat, and profile customisation —
-            cross-platform &amp; free forever.
+            No tracking. No data scandals. No wondering when the funding
+            runs out. Your voice, your data, your server - in your hands.
+            Cross-platform &amp; free forever.
           </p>
 
           <div className="hero__actions">

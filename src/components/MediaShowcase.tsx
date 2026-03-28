@@ -25,7 +25,7 @@ export function MediaShowcase() {
         />
         <MediaPlaceholder
           src="/assets/profile_customization.png"
-          alt="Profile customisation in Fancy Mumble — avatar, bio, status and card background options"
+          alt="Profile customisation in Fancy Mumble - avatar, bio, status and card background options"
         />
         <MediaPlaceholder
           src="/assets/search.png"

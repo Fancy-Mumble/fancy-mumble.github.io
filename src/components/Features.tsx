@@ -15,13 +15,13 @@ const FEATURES = [
     icon: <Icon icon={faMicrophone} size="lg" />,
     title: "Crystal-Clear VoIP",
     description:
-      "Full Mumble protocol support with Opus codec, noise gate, and automatic gain control — VoIP audio quality that rivals any proprietary platform.",
+      "Full Mumble protocol support with Opus codec, noise gate, and automatic gain control - VoIP audio quality that rivals any proprietary platform.",
   },
   {
     icon: <Icon icon={faWandMagicSparkles} size="lg" />,
     title: "Modern Interface",
     description:
-      "A beautiful glassmorphic UI with channel tree, chat view, and user profiles — a Mumble client as polished as any modern voice chat app.",
+      "A beautiful glassmorphic UI with channel tree, chat view, and user profiles - a Mumble client as polished as any modern voice chat app.",
   },
   {
     icon: <Icon icon={faComments} size="lg" />,
@@ -45,7 +45,7 @@ const FEATURES = [
     icon: <Icon icon={faGlobe} size="lg" />,
     title: "Cross-Platform VoIP",
     description:
-      "Runs natively on Windows, Linux, and Android — the same great Mumble VoIP experience everywhere.",
+      "Runs natively on Windows, Linux, and Android - the same great Mumble VoIP experience everywhere.",
   },
 ];
 
@@ -54,7 +54,7 @@ export function Features() {
     <Section id="features">
       <SectionHeading
         title="Why choose Fancy Mumble?"
-        subtitle="All the VoIP and chat features you need — self-hosted, private, and built on the Mumble protocol."
+        subtitle="All the VoIP and chat features you need - self-hosted, private, and built on the Mumble protocol."
       />
       <div className="features-grid">
         {FEATURES.map((f) => (
