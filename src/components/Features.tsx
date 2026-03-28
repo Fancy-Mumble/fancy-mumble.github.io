@@ -13,15 +13,15 @@ import {
 const FEATURES = [
   {
     icon: <Icon icon={faMicrophone} size="lg" />,
-    title: "Crystal-Clear Voice",
+    title: "Crystal-Clear VoIP",
     description:
-      "Full Mumble protocol support with Opus codec, noise gate, and automatic gain control for pristine audio quality.",
+      "Full Mumble protocol support with Opus codec, noise gate, and automatic gain control — VoIP audio quality that rivals any proprietary platform.",
   },
   {
     icon: <Icon icon={faWandMagicSparkles} size="lg" />,
     title: "Modern Interface",
     description:
-      "A beautiful glassmorphic UI with channel tree, chat view, and user profiles - designed to feel right at home.",
+      "A beautiful glassmorphic UI with channel tree, chat view, and user profiles — a Mumble client as polished as any modern voice chat app.",
   },
   {
     icon: <Icon icon={faComments} size="lg" />,
@@ -39,13 +39,13 @@ const FEATURES = [
     icon: <Icon icon={faShieldHalved} size="lg" />,
     title: "Secure by Design",
     description:
-      "TLS encryption, client certificates, and end-to-end encryption support to keep your conversations private.",
+      "TLS encryption, client certificates, and end-to-end encryption support - unlike centralised VoIP platforms, your data stays yours.",
   },
   {
     icon: <Icon icon={faGlobe} size="lg" />,
-    title: "Cross-Platform",
+    title: "Cross-Platform VoIP",
     description:
-      "Runs natively on Windows, Linux, and Android - same great experience everywhere.",
+      "Runs natively on Windows, Linux, and Android — the same great Mumble VoIP experience everywhere.",
   },
 ];
 
@@ -53,8 +53,8 @@ export function Features() {
   return (
     <Section id="features">
       <SectionHeading
-        title="Everything you need"
-        subtitle="Packed with features to make your voice communication better."
+        title="Why choose Fancy Mumble?"
+        subtitle="All the VoIP and chat features you need — self-hosted, private, and built on the Mumble protocol."
       />
       <div className="features-grid">
         {FEATURES.map((f) => (

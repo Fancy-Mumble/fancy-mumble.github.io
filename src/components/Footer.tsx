@@ -74,7 +74,9 @@ export function Footer() {
             .
           </p>
           <p className="footer__note">
-            Fancy Mumble is not affiliated with the official Mumble project.
+            Fancy Mumble is an open-source Mumble VoIP client and a free
+            alternative to proprietary voice chat. Not affiliated with the
+            official Mumble project.
           </p>
         </div>
       </div>

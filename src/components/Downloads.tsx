@@ -55,8 +55,8 @@ export function Downloads() {
   return (
     <Section id="download">
       <SectionHeading
-        title="Get Fancy Mumble"
-        subtitle="Download the latest release for your platform."
+        title="Download Fancy Mumble"
+        subtitle="Get the free, open-source Mumble VoIP client — a privacy-friendly alternative to proprietary voice chat."
       />
       <div className="downloads-grid">
         {PLATFORMS.map((p) => (

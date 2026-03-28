@@ -28,13 +28,14 @@ export function Hero() {
           </div>
 
           <h1 className="hero__title">
-            Voice chat,{" "}
-            <span className="hero__title--accent">reimagined.</span>
+            The modern Mumble VoIP client.{" "}
+            <span className="hero__title--accent">Voice chat that respects your privacy.</span>
           </h1>
 
           <p className="hero__subtitle">
-            A modern Mumble client with a sleek UI, rich chat, and
-            profile customisation - open source &amp; cross-platform.
+            Fancy Mumble is an open-source Mumble client with crystal-clear
+            VoIP, a sleek UI, rich chat, and profile customisation —
+            cross-platform &amp; free forever.
           </p>
 
           <div className="hero__actions">
@@ -59,7 +60,7 @@ export function Hero() {
         <div className="hero__visual">
           <MediaPlaceholder
             src="/assets/main_window.png"
-            alt="Fancy Mumble main window showing channel list and voice chat"
+            alt="Fancy Mumble VoIP client main window showing Mumble channel list and voice chat"
           />
         </div>
       </div>

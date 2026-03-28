@@ -6,14 +6,14 @@ export function MediaShowcase() {
     <Section id="screenshots" className="media-showcase">
       <SectionHeading
         title="See it in action"
-        subtitle="A glimpse at the Fancy Mumble experience."
+        subtitle="A glimpse at the Fancy Mumble VoIP experience."
       />
 
       {/* Hero screenshot - full width */}
       <div className="media-showcase__hero">
         <MediaPlaceholder
           src="/assets/Sidepanel Open.png"
-          alt="Fancy Mumble with channel panel open showing members and permissions"
+          alt="Fancy Mumble VoIP client with Mumble channel panel open showing members and permissions"
         />
       </div>
 
@@ -21,11 +21,11 @@ export function MediaShowcase() {
       <div className="media-showcase__grid">
         <MediaPlaceholder
           src="/assets/personal_chat.png"
-          alt="Chat personalisation settings with background and message style options"
+          alt="Mumble VoIP client chat personalisation with background and message style options"
         />
         <MediaPlaceholder
           src="/assets/profile_customization.png"
-          alt="Profile customisation with avatar, bio, status and card background options"
+          alt="Profile customisation in Fancy Mumble — avatar, bio, status and card background options"
         />
         <MediaPlaceholder
           src="/assets/search.png"
