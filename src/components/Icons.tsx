@@ -8,6 +8,7 @@ import {
   faShieldHalved,
   faGlobe,
   faDownload,
+  faServer,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faWindows,
@@ -37,4 +38,5 @@ export {
   faShieldHalved,
   faGlobe,
   faDownload,
+  faServer,
 };

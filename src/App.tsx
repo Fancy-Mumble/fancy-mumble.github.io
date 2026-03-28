@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { MediaShowcase } from "./components/MediaShowcase";
 import { Downloads } from "./components/Downloads";
+import { ServerInfo } from "./components/ServerInfo";
 import { Footer } from "./components/Footer";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Features />
         <MediaShowcase />
         <Downloads />
+        <ServerInfo />
       </main>
       <Footer />
     </>

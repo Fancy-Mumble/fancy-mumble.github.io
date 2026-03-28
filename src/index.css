@@ -596,6 +596,38 @@ video {
   text-align: center;
 }
 
+/* ---------- Server Info ---------- */
+.server-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.server-card__icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.server-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.server-card__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.server-card__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
 /* ---------- Footer ---------- */
 .footer {
   border-top: 1px solid var(--color-glass-border);
