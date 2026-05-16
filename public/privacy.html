@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Privacy Policy – Fancy Mumble</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --color-bg-primary: #0e0e16;
+      --color-bg-secondary: #141422;
+      --color-accent: #2aabee;
+      --color-text-primary: #ffffff;
+      --color-text-secondary: rgba(255,255,255,0.55);
+      --color-glass-border: rgba(255,255,255,0.06);
+      --radius-md: 12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: var(--color-bg-primary);
+      color: var(--color-text-primary);
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--color-glass-border);
+      padding: 20px 0;
+      margin-bottom: 48px;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .back-link {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    .site-name {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .last-updated {
+      color: var(--color-text-secondary);
+      font-size: 0.875rem;
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 40px 0 12px;
+      color: var(--color-text-primary);
+    }
+
+    p {
+      color: var(--color-text-secondary);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      color: var(--color-text-secondary);
+      padding-left: 24px;
+      margin-bottom: 14px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .infobox {
+      background: rgba(42,171,238,0.08);
+      border: 1px solid rgba(42,171,238,0.2);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .infobox p { margin: 0; color: var(--color-text-primary); font-size: 0.9rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.875rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--color-glass-border);
+      color: var(--color-text-secondary);
+    }
+
+    th {
+      color: var(--color-text-primary);
+      font-weight: 600;
+      background: rgba(255,255,255,0.03);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--color-glass-border);
+      margin: 48px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="back-link" href="/">&larr; Back to Fancy Mumble</a>
+      <span style="color:var(--color-glass-border)">|</span>
+      <span class="site-name">Fancy Mumble</span>
+    </div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: May 2025</p>
+
+    <div class="infobox">
+      <p>
+        This site uses a <strong>two-tier analytics approach</strong>. An anonymous page-visit
+        counter runs without consent (no cookies, no IP storage, no personal data).
+        Full event tracking (download clicks, navigation, etc.) requires your explicit consent
+        via the cookie banner. You can withdraw consent at any time by clearing your browser's
+        local storage for this site.
+      </p>
+    </div>
+
+    <h2>1. Controller</h2>
+    <p>
+      The controller responsible for data processing on this website is the operator of Fancy Mumble.
+      For contact details and the full legal imprint see
+      <a href="https://privacy.magical.rocks/" target="_blank" rel="noopener noreferrer">privacy.magical.rocks</a>.
+    </p>
+
+    <h2>2. What we collect and why</h2>
+    <p>
+      We collect anonymised usage data through <strong>PostHog</strong>
+      (a third-party analytics service) to understand how visitors interact with this site
+      and to improve it over time. Collection happens in two tiers:
+    </p>
+    <p><strong>Always active (no consent required):</strong> an anonymous page-visit count
+    is recorded on every visit. No cookies are set, no data is written to your device,
+    and your IP address is never stored. This is not personal data processing under GDPR
+    and is exempt from the ePrivacy Directive.</p>
+    <p><strong>With your consent only:</strong> the following additional events are tracked:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Data captured</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Page view</td>
+          <td>URL, referrer, browser type, operating system, approximate country (derived from IP - IP itself is not stored)</td>
+        </tr>
+        <tr>
+          <td>Download button click</td>
+          <td>Platform (Windows / Linux / Android), button location on page</td>
+        </tr>
+        <tr>
+          <td>GitHub link click</td>
+          <td>Which repository link was clicked</td>
+        </tr>
+        <tr>
+          <td>Navigation click</td>
+          <td>Link label and target anchor</td>
+        </tr>
+        <tr>
+          <td>Screenshot view</td>
+          <td>Which screenshot was opened in the lightbox</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      No names, email addresses, or other directly identifying personal data are collected.
+    </p>
+
+    <h2>3. Legal basis</h2>
+    <p>
+      <strong>Anonymous page-view counting</strong> involves no personal data and no device
+      storage, so no legal basis under GDPR or the ePrivacy Directive is required.
+    </p>
+    <p>
+      <strong>Full event tracking</strong> is based on your freely given, specific, and informed
+      <strong>consent</strong> in accordance with Art. 6(1)(a) GDPR.
+      You may withdraw consent at any time (see section 7).
+    </p>
+
+    <h2>4. Cookies</h2>
+    <p>
+      When you accept analytics, PostHog sets cookies in your browser to distinguish sessions
+      and recognise returning visitors. These cookies are prefixed with <code style="font-family:monospace;color:var(--color-accent)">ph_</code>
+      and have a maximum lifetime of 1 year.
+    </p>
+    <p>
+      If you decline, <strong>no cookies are set</strong> by this site.
+    </p>
+
+    <h2>5. Data processor and storage location</h2>
+    <p>
+      Analytics data is processed by <strong>PostHog, Inc.</strong> acting as a data processor
+      on our behalf. We use the <strong>EU-hosted PostHog endpoint</strong>
+      (<code style="font-family:monospace;color:var(--color-accent)">eu.i.posthog.com</code>),
+      meaning all data is stored and processed within the European Union.
+    </p>
+    <p>
+      PostHog's privacy policy:
+      <a href="https://posthog.com/privacy" target="_blank" rel="noopener noreferrer">posthog.com/privacy</a>.
+      A Data Processing Agreement (DPA) is in place with PostHog.
+    </p>
+
+    <h2>6. Retention</h2>
+    <p>
+      Event data is retained for <strong>1 year</strong> by default and is then automatically deleted.
+      Session recordings are not enabled on this site.
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>Under GDPR you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> - request a copy of the data held about you (Art. 15)</li>
+      <li><strong>Rectification</strong> - correct inaccurate data (Art. 16)</li>
+      <li><strong>Erasure</strong> - request deletion of your data (Art. 17)</li>
+      <li><strong>Restriction</strong> - restrict how we process your data (Art. 18)</li>
+      <li><strong>Data portability</strong> - receive your data in a machine-readable format (Art. 20)</li>
+      <li><strong>Object</strong> - object to processing based on legitimate interests (Art. 21)</li>
+      <li>
+        <strong>Withdraw consent</strong> - you can withdraw your analytics consent at any time
+        by opening your browser's developer tools, going to <em>Application → Local Storage</em>
+        for this site, and deleting the <code style="font-family:monospace;color:var(--color-accent)">cookie_consent</code> key,
+        then reloading the page and selecting "Decline".
+      </li>
+    </ul>
+    <p>
+      To exercise any of these rights, contact us at the address listed on the
+      <a href="https://privacy.magical.rocks/" target="_blank" rel="noopener noreferrer">imprint page</a>.
+    </p>
+
+    <h2>8. Supervisory authority</h2>
+    <p>
+      If you believe we have not handled your data in accordance with GDPR, you have the right
+      to lodge a complaint with a supervisory authority. In Germany the competent authority is
+      the <a href="https://www.bfdi.bund.de/" target="_blank" rel="noopener noreferrer">Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI)</a>.
+      You may also contact the data protection authority in your country of residence.
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this policy when our data practices change. The "Last updated" date at the top
+      of this page reflects the most recent revision.
+    </p>
+
+    <hr />
+  </main>
+</body>
+</html>

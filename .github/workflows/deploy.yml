@@ -30,6 +30,9 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_PUBLIC_POSTHOG_TOKEN: ${{ secrets.VITE_PUBLIC_POSTHOG_TOKEN }}
+          VITE_PUBLIC_POSTHOG_HOST: ${{ secrets.VITE_PUBLIC_POSTHOG_HOST }}
 
       - name: Copy CNAME & disable Jekyll
         run: |

@@ -8,6 +8,7 @@ import {
   RELEASES_PAGE,
   type PlatformKey,
 } from "../hooks/useReleaseLinks";
+import { usePostHog } from "@posthog/react";
 
 interface DownloadOption {
   key: PlatformKey;
@@ -51,6 +52,7 @@ const PLATFORMS: Platform[] = [
 
 export function Downloads() {
   const links = useReleaseLinks();
+  const posthog = usePostHog();
 
   return (
     <Section id="download">
@@ -74,6 +76,13 @@ export function Downloads() {
                   variant={i === p.downloads.length - 1 ? "primary" : "secondary"}
                   size="md"
                   href={links[d.key] ?? RELEASES_PAGE}
+                  onClick={() =>
+                    posthog?.capture("download_clicked", {
+                      platform: d.key,
+                      location: "downloads",
+                      label: d.label,
+                    })
+                  }
                 >
                   {d.label}
                 </Button>

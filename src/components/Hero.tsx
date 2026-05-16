@@ -9,12 +9,14 @@ import {
   platformLabel,
   RELEASES_PAGE,
 } from "../hooks/useReleaseLinks";
+import { usePostHog } from "@posthog/react";
 
 export function Hero() {
   const links = useReleaseLinks();
   const platform = detectPlatform();
   const label = platformLabel(platform);
   const href = (platform && links[platform]) ?? RELEASES_PAGE;
+  const posthog = usePostHog();
 
   return (
     <Section className="hero">
@@ -39,7 +41,18 @@ export function Hero() {
           </p>
 
           <div className="hero__actions">
-            <Button variant="primary" size="lg" href={href}>
+            <Button
+              variant="primary"
+              size="lg"
+              href={href}
+              onClick={() =>
+                posthog?.capture("download_clicked", {
+                  platform: platform ?? "unknown",
+                  location: "hero",
+                  label: label ? `Download for ${label}` : "Download Now",
+                })
+              }
+            >
               <Icon icon={faDownload} size="sm" />{" "}
               {label ? `Download for ${label}` : "Download Now"}
             </Button>
@@ -47,6 +60,7 @@ export function Hero() {
               variant="secondary"
               size="lg"
               href="https://github.com/Fancy-Mumble/FancyMumbleNext"
+              onClick={() => posthog?.capture("github_link_clicked", { location: "hero" })}
             >
               View on GitHub
             </Button>

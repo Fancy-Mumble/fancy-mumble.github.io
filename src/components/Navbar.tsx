@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Button } from "./Button";
+import { usePostHog } from "@posthog/react";
 
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Screenshots", href: "#screenshots" },
   { label: "Download", href: "#download" },
+  { label: "Docs", href: "http://docs.fancy-mumble.com/" },
 ] as const;
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const posthog = usePostHog();
 
   return (
     <nav className="navbar">
@@ -33,7 +36,10 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className="navbar__link"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                posthog?.capture("nav_link_clicked", { label: link.label, href: link.href });
+              }}
             >
               {link.label}
             </a>
@@ -43,6 +49,13 @@ export function Navbar() {
             size="md"
             href="https://github.com/Fancy-Mumble/FancyMumbleNext/releases/latest"
             className="navbar__cta"
+            onClick={() =>
+              posthog?.capture("download_clicked", {
+                platform: "unknown",
+                location: "navbar",
+                label: "Download",
+              })
+            }
           >
             Download
           </Button>

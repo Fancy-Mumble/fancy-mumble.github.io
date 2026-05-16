@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Lightbox } from "./Lightbox";
+import { usePostHog } from "@posthog/react";
 
 interface MediaPlaceholderProps {
   type?: "image" | "video";
@@ -17,6 +18,7 @@ export function MediaPlaceholder({
   alt = "",
 }: MediaPlaceholderProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const posthog = usePostHog();
 
   if (src) {
     if (type === "video") {
@@ -35,7 +37,10 @@ export function MediaPlaceholder({
       <>
         <button
           className="media media--real"
-          onClick={() => setLightboxOpen(true)}
+          onClick={() => {
+            setLightboxOpen(true);
+            posthog?.capture("screenshot_viewed", { src, alt });
+          }}
           aria-label={`Enlarge: ${alt}`}
           type="button"
         >

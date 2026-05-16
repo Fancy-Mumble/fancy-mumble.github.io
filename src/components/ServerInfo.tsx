@@ -2,8 +2,11 @@ import { Section, SectionHeading } from "./Section";
 import { GlassCard } from "./GlassCard";
 import { Button } from "./Button";
 import { Icon, faServer } from "./Icons";
+import { usePostHog } from "@posthog/react";
 
 export function ServerInfo() {
+  const posthog = usePostHog();
+
   return (
     <Section id="server">
       <SectionHeading
@@ -26,6 +29,7 @@ export function ServerInfo() {
             variant="primary"
             size="md"
             href="https://github.com/SetZero/mumble-server"
+            onClick={() => posthog?.capture("server_github_clicked")}
           >
             View on GitHub
           </Button>

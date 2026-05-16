@@ -13,7 +13,7 @@ const FOOTER_SECTIONS = [
   {
     title: "Resources",
     links: [
-      { label: "Documentation", href: "https://github.com/Fancy-Mumble/FancyMumbleNext#readme" },
+      { label: "Documentation", href: "http://docs.fancy-mumble.com/" },
       { label: "Issue Tracker", href: "https://github.com/Fancy-Mumble/FancyMumbleNext/issues" },
       { label: "Mumble Protocol", href: "https://mumble-protocol.readthedocs.io/" },
     ],
@@ -28,7 +28,8 @@ const FOOTER_SECTIONS = [
     title: "Legal",
     links: [
       { label: "MIT License", href: "https://github.com/Fancy-Mumble/FancyMumbleNext/blob/main/LICENSE" },
-      { label: "Security Policy", href: "https://github.com/Fancy-Mumble/FancyMumbleNext/security" },
+      { label: "Security Policy", href: "https://github.com/Fancy-Mumble/FancyMumble/security/policy" },
+      { label: "Privacy Policy", href: "/privacy.html" },
       { label: "Imprint", href: "https://privacy.magical.rocks/" },
     ],
   },

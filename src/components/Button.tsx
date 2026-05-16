@@ -32,6 +32,7 @@ export function Button({
         style={style}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={onClick}
       >
         {children}
       </a>
