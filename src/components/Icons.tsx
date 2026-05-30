@@ -9,6 +9,10 @@ import {
   faGlobe,
   faDownload,
   faServer,
+  faDesktop,
+  faPuzzlePiece,
+  faFilm,
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faWindows,
@@ -39,4 +43,8 @@ export {
   faGlobe,
   faDownload,
   faServer,
+  faDesktop,
+  faPuzzlePiece,
+  faFilm,
+  faFileLines,
 };

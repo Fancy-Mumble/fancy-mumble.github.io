@@ -20,10 +20,11 @@ export function ServerInfo() {
         <div className="server-card__content">
           <h3 className="server-card__title">Fancy Mumble Server</h3>
           <p className="server-card__desc">
-            Some features - like rich profiles, extended chat, and real-time
-            customisation - require a compatible Mumble server. Our open-source
-            server fork provides full VoIP support for every Fancy Mumble
-            feature out of the box.
+            Advanced features - like screen sharing (WebRTC SFU), file hosting, the plugin
+            system, live document editing, watch-together, and Signal-grade E2EE - require
+            a compatible server. Our open-source server fork provides full out-of-the-box
+            support for every Fancy Mumble feature, including a built-in plugin host and
+            onboarding workflow.
           </p>
           <Button
             variant="primary"

@@ -14,6 +14,7 @@ const FOOTER_SECTIONS = [
     title: "Resources",
     links: [
       { label: "Documentation", href: "http://docs.fancy-mumble.com/" },
+      { label: "Plugin Store", href: "https://plugins.fancy-mumble.com/" },
       { label: "Issue Tracker", href: "https://github.com/Fancy-Mumble/FancyMumbleNext/issues" },
       { label: "Mumble Protocol", href: "https://mumble-protocol.readthedocs.io/" },
     ],

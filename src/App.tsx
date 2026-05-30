@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { MediaShowcase } from "./components/MediaShowcase";
 import { Downloads } from "./components/Downloads";
+import { PluginStore } from "./components/PluginStore";
 import { ServerInfo } from "./components/ServerInfo";
 import { Footer } from "./components/Footer";
 import { CookieBanner } from "./components/CookieBanner";
@@ -16,6 +17,7 @@ export default function App() {
         <Features />
         <MediaShowcase />
         <Downloads />
+        <PluginStore />
         <ServerInfo />
       </main>
       <Footer />

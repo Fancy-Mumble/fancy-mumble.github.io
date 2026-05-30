@@ -5,6 +5,7 @@ import { usePostHog } from "@posthog/react";
 const NAV_LINKS = [
   { label: "Features", href: "#features" },
   { label: "Screenshots", href: "#screenshots" },
+  { label: "Plugins", href: "#plugins" },
   { label: "Download", href: "#download" },
   { label: "Docs", href: "http://docs.fancy-mumble.com/" },
 ] as const;
